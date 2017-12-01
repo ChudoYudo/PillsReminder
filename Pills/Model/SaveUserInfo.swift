@@ -9,6 +9,7 @@
 import Foundation
 
 public class SaveUserSignInfo {
+    static var mainUser: User = User()
     static var userFirstName: String = ""
     static var userSecondName: String = ""
     //Сохраняет в UserDefaults пароль и e-mail пользователя
@@ -53,8 +54,7 @@ public class SaveUserSignInfo {
     class func setUserName(firstName: String, secondName: String){
         UserDefaults.standard.setValue("\(firstName)", forKey: "firstName")
         UserDefaults.standard.setValue("\(secondName)", forKey: "secondName")
-        userFirstName = firstName
-        userSecondName = secondName
+        mainUser.setUser(userName: firstName, userSecondName: secondName)
         UserDefaults.standard.synchronize()
     }
 }

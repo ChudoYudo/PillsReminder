@@ -23,4 +23,8 @@ class Pill {
         self.dateOfStart = dateOfStart
         self.reminder = reminder
     }
+    public func getPillName() -> String {
+        return self.pillName
+    }
+    
 }

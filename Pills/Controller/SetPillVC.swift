@@ -8,6 +8,7 @@
 
 import UIKit
 import Timepiece
+import Foundation
 
 class SetPillVC: UIViewController {
 
@@ -19,9 +20,20 @@ class SetPillVC: UIViewController {
     var pill: Pill = Pill()
     
     @IBAction func startButtonPressed(_ sender: Any) {
+        let pillNumber = Int(amountTextField.text!)!
+        let pillCycle = Int(cycleTextField.text!)!
+        let lol = pillNumber/pillCycle
+        let dateOfStart = Date()
+        let remind = Int(slider.value)
         pill.setPill(pillName: productTextField.text!, pillNumber: Int(amountTextField.text!)!, pillCycle: Int(cycleTextField.text!)!, dateOfStart: Date(), reminder: Int(slider.value))
-        User.addPill(pill: pill)
-        performSegue(withIdentifier: "addedPill", sender: nil)
+        SaveUserSignInfo.mainUser.addPill(pill: pill)
+        for i in 1...lol {
+            var now = dateOfStart
+            now = (now + ((i*remind).minutes))!
+            setNotification(text: productTextField.text!, date: now)
+        }
+        performSegue(withIdentifier: "addPill", sender: nil)
+        print(SaveUserSignInfo.mainUser.getPills()[0].getPillName())
     }
     @IBAction func sliderValueChanged(_ sender: Any) {
         sliderLabel.text = "\(String(Int(slider.value))) hours"
@@ -37,6 +49,12 @@ class SetPillVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
+    func setNotification(text: String, date: Date) {
+        let notification = UILocalNotification()
+        notification.alertTitle = "Take a pill"
+        notification.alertBody = "It's time for taking a \(text)"
+        notification.soundName = UILocalNotificationDefaultSoundName
+        notification.fireDate = date
+        UIApplication.shared.scheduleLocalNotification(notification)
+    }
 }
-

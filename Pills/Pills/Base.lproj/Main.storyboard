@@ -72,14 +72,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TfA-kL-zBa">
-                                <rect key="frame" x="88" y="424" width="73" height="73"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="73" id="Bju-NU-1M9"/>
-                                    <constraint firstAttribute="height" constant="73" id="WaY-ee-dCo"/>
-                                </constraints>
-                                <state key="normal" title="Button" image="VK.svg"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e8Z-V9-uxi">
                                 <rect key="frame" x="225" y="424" width="73" height="73"/>
                                 <constraints>
@@ -106,7 +98,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an account? Sign up here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0vD-Tb-dRR">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Don't have an account? Sign up here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0vD-Tb-dRR">
                                 <rect key="frame" x="79" y="519" width="217" height="19"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="217" id="7em-yS-PYQ"/>
@@ -123,7 +115,6 @@
                             <constraint firstItem="rOc-4O-8zd" firstAttribute="leading" secondItem="gIa-ls-yHE" secondAttribute="trailing" constant="42.5" id="14M-H0-dQa"/>
                             <constraint firstItem="FDX-lc-5xe" firstAttribute="leading" secondItem="dNc-bk-4l4" secondAttribute="leading" constant="27" id="4pe-rJ-V72"/>
                             <constraint firstItem="rOc-4O-8zd" firstAttribute="top" secondItem="aBJ-Eq-2Aj" secondAttribute="bottom" constant="125" id="6Ag-f8-Gi3"/>
-                            <constraint firstItem="TfA-kL-zBa" firstAttribute="leading" secondItem="dNc-bk-4l4" secondAttribute="leading" constant="88" id="9YG-7a-7zz"/>
                             <constraint firstItem="aBJ-Eq-2Aj" firstAttribute="centerX" secondItem="EWi-Az-su1" secondAttribute="centerX" id="BAY-BN-9La"/>
                             <constraint firstItem="dNc-bk-4l4" firstAttribute="trailing" secondItem="hdN-PM-Usz" secondAttribute="trailing" constant="52" id="OLp-qQ-GtY"/>
                             <constraint firstItem="e8Z-V9-uxi" firstAttribute="top" secondItem="hdN-PM-Usz" secondAttribute="bottom" constant="126" id="P7a-9E-BbT"/>
@@ -133,11 +124,9 @@
                             <constraint firstItem="gIa-ls-yHE" firstAttribute="leading" secondItem="dNc-bk-4l4" secondAttribute="leading" constant="27" id="TAf-Q7-4Fr"/>
                             <constraint firstItem="dNc-bk-4l4" firstAttribute="trailing" secondItem="e8Z-V9-uxi" secondAttribute="trailing" constant="77" id="Tvu-df-d5e"/>
                             <constraint firstItem="hdN-PM-Usz" firstAttribute="top" secondItem="rOc-4O-8zd" secondAttribute="bottom" constant="40" id="fHK-2a-dk7"/>
-                            <constraint firstItem="0vD-Tb-dRR" firstAttribute="top" secondItem="TfA-kL-zBa" secondAttribute="bottom" constant="22" id="i1W-di-wro"/>
                             <constraint firstItem="gIa-ls-yHE" firstAttribute="top" secondItem="dNc-bk-4l4" secondAttribute="top" constant="184" id="t3O-6X-qZh"/>
                             <constraint firstItem="dNc-bk-4l4" firstAttribute="trailing" secondItem="rOc-4O-8zd" secondAttribute="trailing" constant="52" id="tAg-AJ-0GH"/>
                             <constraint firstItem="0vD-Tb-dRR" firstAttribute="centerX" secondItem="EWi-Az-su1" secondAttribute="centerX" id="tGw-HQ-zqp"/>
-                            <constraint firstItem="TfA-kL-zBa" firstAttribute="top" secondItem="M1M-dZ-jnw" secondAttribute="bottom" constant="46" id="xgX-jw-4wN"/>
                             <constraint firstItem="M1M-dZ-jnw" firstAttribute="top" secondItem="hdN-PM-Usz" secondAttribute="bottom" constant="48" id="yUT-Rs-cq3"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dNc-bk-4l4"/>
@@ -331,15 +320,22 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="41" id="sCm-a1-XVq">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="41"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PillCell" rowHeight="108" id="sCm-a1-XVq" customClass="PillCell" customModule="Pills" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="108"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sCm-a1-XVq" id="aez-1v-SQt">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="40.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="107.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gUk-5o-5j1">
-                                                    <rect key="frame" x="64" y="10" width="42" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="1000" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gUk-5o-5j1">
+                                                    <rect key="frame" x="15" y="10" width="345" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="1001" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eum-6e-YSe">
+                                                    <rect key="frame" x="15" y="39" width="345" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -347,6 +343,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="pillNameLabel" destination="gUk-5o-5j1" id="3hI-vQ-kN8"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -364,6 +363,7 @@
                     </view>
                     <connections>
                         <outlet property="menuButton" destination="BkQ-Ae-N0S" id="Fe7-pN-YzL"/>
+                        <outlet property="tableView" destination="y8B-Bx-Xh1" id="MJb-Qu-xS5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oUN-JR-prk" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -490,7 +490,7 @@
                         <outlet property="productTextField" destination="Zzs-uH-Azb" id="Zwb-lv-kw5"/>
                         <outlet property="slider" destination="Sny-PA-U6b" id="pYl-8n-b9q"/>
                         <outlet property="sliderLabel" destination="3eS-aM-Tza" id="QxQ-np-8La"/>
-                        <segue destination="BYZ-38-t0r" kind="show" identifier="addedPill" id="PZ8-5s-Mmc"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="addPill" id="pjI-F6-ubT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oZe-VW-2xc" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -576,7 +576,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="VK.svg" width="1000" height="1000"/>
         <image name="addChannelButton" width="22" height="22"/>
         <image name="arrow-left" width="512" height="512"/>
         <image name="light16" width="100" height="100"/>
@@ -584,6 +583,6 @@
         <image name="usernew" width="600" height="600"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="PZ8-5s-Mmc"/>
+        <segue reference="uPt-pI-bdq"/>
     </inferredMetricsTieBreakers>
 </document>

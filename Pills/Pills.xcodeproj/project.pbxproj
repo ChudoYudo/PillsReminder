@@ -25,6 +25,7 @@
 		0447057F1FDA198800E806BF /* Pill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0447057E1FDA198800E806BF /* Pill.swift */; };
 		044EB5771FD6F31200133952 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044EB5761FD6F31200133952 /* Reachability.swift */; };
 		0465C5561FDA46B7001CCB03 /* SetPillVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0465C5551FDA46B7001CCB03 /* SetPillVC.swift */; };
+		046A541F1FE3BDB7004B9042 /* PillCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046A541E1FE3BDB7004B9042 /* PillCell.swift */; };
 		04CA80651FDA230F00028BCC /* SwiftyVK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04CA80641FDA230F00028BCC /* SwiftyVK.framework */; };
 		04CA80671FDA233D00028BCC /* Timepiece.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04CA80661FDA233D00028BCC /* Timepiece.framework */; };
 		04CA80691FDA236400028BCC /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04CA80681FDA236400028BCC /* SwiftyJSON.framework */; };
@@ -75,6 +76,7 @@
 		044EB5761FD6F31200133952 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		045ACCBD1FDA214B0006E99D /* SwiftyVK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyVK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0465C5551FDA46B7001CCB03 /* SetPillVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetPillVC.swift; sourceTree = "<group>"; };
+		046A541E1FE3BDB7004B9042 /* PillCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillCell.swift; sourceTree = "<group>"; };
 		04CA805F1FDA21C900028BCC /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		04CA80601FDA21C900028BCC /* Timepiece.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Timepiece.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		04CA80641FDA230F00028BCC /* SwiftyVK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SwiftyVK.framework; sourceTree = SOURCE_ROOT; };
@@ -175,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				0444CC3D1FD5A57700246C12 /* GradientView.swift */,
+				046A541E1FE3BDB7004B9042 /* PillCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -237,6 +240,7 @@
 				8EBDE10D0E479D2A194EED8D /* [CP] Embed Pods Frameworks */,
 				E4A7F0509B5AA94B8CCC2D72 /* [CP] Copy Pods Resources */,
 				04C04DA11FDA1FB900A35140 /* Embed Frameworks */,
+				04751C9A1FFF85760033100B /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -297,6 +301,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		04751C9A1FFF85760033100B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "";
+		};
 		8EBDE10D0E479D2A194EED8D /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -375,6 +392,7 @@
 				044EB5771FD6F31200133952 /* Reachability.swift in Sources */,
 				044705781FDA03AC00E806BF /* RegistrationAndLoginViaEmail.swift in Sources */,
 				0447057F1FDA198800E806BF /* Pill.swift in Sources */,
+				046A541F1FE3BDB7004B9042 /* PillCell.swift in Sources */,
 				044339BB1FD5B8400029AE4A /* Constants.swift in Sources */,
 				0447057D1FDA197E00E806BF /* User.swift in Sources */,
 				0444CC341FD59D9500246C12 /* UserVC.swift in Sources */,

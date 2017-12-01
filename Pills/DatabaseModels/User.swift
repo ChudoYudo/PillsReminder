@@ -12,6 +12,7 @@ import SwiftyJSON
 import Timepiece
 
 class User {
+    static let instance = User()
     private var userName: String = ""
     private var userSecondName: String = ""
     private var pills: [Pill] = []
@@ -22,6 +23,15 @@ class User {
     }
     public func addPill(pill: Pill){
         self.pills.append(pill)
+    }
+    public func getPillsNum() -> Int {
+        return self.pills.count
+    }
+    public func getPills() -> [Pill]{
+        return self.pills
+    }
+    public func setPills(pills: [Pill]){
+        self.pills = pills
     }
     
 }
