@@ -14,6 +14,9 @@
 		0444CC321FD59D8100246C12 /* PillsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0444CC311FD59D8100246C12 /* PillsVC.swift */; };
 		0444CC341FD59D9500246C12 /* UserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0444CC331FD59D9500246C12 /* UserVC.swift */; };
 		0444CC3B1FD5A23200246C12 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0444CC3A1FD5A23200246C12 /* SWRevealViewController.m */; };
+		0444CC3E1FD5A57700246C12 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0444CC3D1FD5A57700246C12 /* GradientView.swift */; };
+		0444CC401FD5B01A00246C12 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0444CC3F1FD5B01A00246C12 /* GoogleService-Info.plist */; };
+		FC6C1EADAD3245BDC1B251EA /* Pods_Pills.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 054DC5EB7737F00D98C3D531 /* Pods_Pills.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,11 @@
 		0444CC391FD5A23200246C12 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		0444CC3A1FD5A23200246C12 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		0444CC3C1FD5A29B00246C12 /* Pills-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pills-Bridging-Header.h"; sourceTree = "<group>"; };
+		0444CC3D1FD5A57700246C12 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		0444CC3F1FD5B01A00246C12 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		054DC5EB7737F00D98C3D531 /* Pods_Pills.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pills.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0EFADF9ED1E59738E388DEFA /* Pods-Pills.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pills.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pills/Pods-Pills.debug.xcconfig"; sourceTree = "<group>"; };
+		487C4D94EB75C6DB51471F61 /* Pods-Pills.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pills.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pills/Pods-Pills.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC6C1EADAD3245BDC1B251EA /* Pods_Pills.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,12 +53,15 @@
 		0444CC0A1FD59B1500246C12 = {
 			isa = PBXGroup;
 			children = (
+				0444CC3F1FD5B01A00246C12 /* GoogleService-Info.plist */,
 				0444CC301FD59D6000246C12 /* Model */,
 				0444CC2F1FD59D5C00246C12 /* View */,
 				0444CC2E1FD59D5100246C12 /* Controller */,
 				0444CC281FD59BB000246C12 /* Supporting files */,
 				0444CC151FD59B1500246C12 /* Pills */,
 				0444CC141FD59B1500246C12 /* Products */,
+				AAD189CFB4B2682298942D78 /* Pods */,
+				6BFB38DEA5B9D4E355AC319E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,6 +107,7 @@
 		0444CC2F1FD59D5C00246C12 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0444CC3D1FD5A57700246C12 /* GradientView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -106,6 +119,23 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		6BFB38DEA5B9D4E355AC319E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				054DC5EB7737F00D98C3D531 /* Pods_Pills.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AAD189CFB4B2682298942D78 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0EFADF9ED1E59738E388DEFA /* Pods-Pills.debug.xcconfig */,
+				487C4D94EB75C6DB51471F61 /* Pods-Pills.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -113,9 +143,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0444CC251FD59B1600246C12 /* Build configuration list for PBXNativeTarget "Pills" */;
 			buildPhases = (
+				AEF4FEFD8DBB12946CB6C892 /* [CP] Check Pods Manifest.lock */,
 				0444CC0F1FD59B1500246C12 /* Sources */,
 				0444CC101FD59B1500246C12 /* Frameworks */,
 				0444CC111FD59B1500246C12 /* Resources */,
+				8EBDE10D0E479D2A194EED8D /* [CP] Embed Pods Frameworks */,
+				E4A7F0509B5AA94B8CCC2D72 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,12 +200,71 @@
 			buildActionMask = 2147483647;
 			files = (
 				0444CC211FD59B1500246C12 /* LaunchScreen.storyboard in Resources */,
+				0444CC401FD5B01A00246C12 /* GoogleService-Info.plist in Resources */,
 				0444CC1E1FD59B1500246C12 /* Assets.xcassets in Resources */,
 				0444CC1C1FD59B1500246C12 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8EBDE10D0E479D2A194EED8D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Pills/Pods-Pills-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyVK/SwiftyVK.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyVK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pills/Pods-Pills-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AEF4FEFD8DBB12946CB6C892 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pills-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4A7F0509B5AA94B8CCC2D72 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pills/Pods-Pills-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0444CC0F1FD59B1500246C12 /* Sources */ = {
@@ -181,6 +273,7 @@
 			files = (
 				0444CC321FD59D8100246C12 /* PillsVC.swift in Sources */,
 				0444CC171FD59B1500246C12 /* AppDelegate.swift in Sources */,
+				0444CC3E1FD5A57700246C12 /* GradientView.swift in Sources */,
 				0444CC341FD59D9500246C12 /* UserVC.swift in Sources */,
 				0444CC3B1FD5A23200246C12 /* SWRevealViewController.m in Sources */,
 			);
@@ -317,6 +410,7 @@
 		};
 		0444CC261FD59B1600246C12 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0EFADF9ED1E59738E388DEFA /* Pods-Pills.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -335,6 +429,7 @@
 		};
 		0444CC271FD59B1600246C12 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 487C4D94EB75C6DB51471F61 /* Pods-Pills.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;

@@ -1,0 +1,40 @@
+PODS:
+  - Firebase/Core (4.1.0):
+    - FirebaseAnalytics (= 4.0.3)
+    - FirebaseCore (= 4.0.5)
+  - FirebaseAnalytics (4.0.3):
+    - FirebaseCore (~> 4.0)
+    - FirebaseInstanceID (~> 2.0)
+    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+    - nanopb (~> 0.3)
+  - FirebaseCore (4.0.5):
+    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+    - nanopb (~> 0.3)
+  - FirebaseInstanceID (2.0.1):
+    - FirebaseCore (~> 4.0)
+  - GoogleToolboxForMac/Defines (2.1.1)
+  - GoogleToolboxForMac/NSData+zlib (2.1.1):
+    - GoogleToolboxForMac/Defines (= 2.1.1)
+  - nanopb (0.3.8):
+    - nanopb/decode (= 0.3.8)
+    - nanopb/encode (= 0.3.8)
+  - nanopb/decode (0.3.8)
+  - nanopb/encode (0.3.8)
+  - SwiftyVK (2.0.10)
+
+DEPENDENCIES:
+  - Firebase/Core
+  - SwiftyVK
+
+SPEC CHECKSUMS:
+  Firebase: 318ff4b6fef902c21d42a5cd45121ae055a68686
+  FirebaseAnalytics: be1236ceae8aa4a25975ab4b216d9e7250c70e49
+  FirebaseCore: 978d45a68d3141e570f42dcfcfefc9b29e6e5f87
+  FirebaseInstanceID: 07e0ef9ea57982fbb6af041854fb88490b610677
+  GoogleToolboxForMac: ad3474f46559b8e1b4c072f198dd925154d055a7
+  nanopb: 7ff14b1dce580107a15de90796e901596d5529bd
+  SwiftyVK: 835477fa75d45331255f0254028ee8799e049067
+
+PODFILE CHECKSUM: 1565c328294f45fa3317b048702e9eeb3134dabb
+
+COCOAPODS: 1.3.1
