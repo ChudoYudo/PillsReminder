@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Reveal View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SWRevealViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <segue destination="cTH-3H-2aT" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegueSetController" id="YYl-kB-4bj"/>
+                        <segue destination="2UA-PD-kdp" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegueSetController" id="XOx-Fj-sXg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--PillsVC-->
+        <scene sceneID="qMZ-CR-GBA">
+            <objects>
+                <viewController id="2UA-PD-kdp" customClass="PillsVC" customModule="Pills" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7br-L3-c4p">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yht-ac-plI">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="77"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BkQ-Ae-N0S">
+                                        <rect key="frame" x="8" y="35" width="24" height="18"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="24" id="0sW-zt-xiS"/>
+                                            <constraint firstAttribute="height" constant="18" id="Nfw-O3-XFZ"/>
+                                        </constraints>
+                                        <state key="normal" image="smackBurger"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pills Reminder" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4og-h5-Gym">
+                                        <rect key="frame" x="108.5" y="29" width="158" height="31.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.52377418649811158" blue="0.52640727931294407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.98444362458793955" green="0.9995245019283695" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="4og-h5-Gym" firstAttribute="centerY" secondItem="BkQ-Ae-N0S" secondAttribute="centerY" id="CkO-ej-OU4"/>
+                                    <constraint firstItem="4og-h5-Gym" firstAttribute="centerX" secondItem="Yht-ac-plI" secondAttribute="centerX" id="g2H-4x-34r"/>
+                                    <constraint firstAttribute="bottom" secondItem="BkQ-Ae-N0S" secondAttribute="bottom" constant="24" id="gHg-e6-sh1"/>
+                                    <constraint firstItem="BkQ-Ae-N0S" firstAttribute="leading" secondItem="Yht-ac-plI" secondAttribute="leading" constant="8" id="tzp-Sj-4j3"/>
+                                    <constraint firstAttribute="height" constant="77" id="yET-Kv-DEo"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Yht-ac-plI" firstAttribute="top" secondItem="7br-L3-c4p" secondAttribute="top" id="Hic-gP-4Y6"/>
+                            <constraint firstItem="Yht-ac-plI" firstAttribute="trailing" secondItem="nLR-ef-NP3" secondAttribute="trailing" id="Ude-8o-eAE"/>
+                            <constraint firstItem="Yht-ac-plI" firstAttribute="leading" secondItem="nLR-ef-NP3" secondAttribute="leading" id="VsX-xr-9xQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="nLR-ef-NP3"/>
+                    </view>
+                    <connections>
+                        <outlet property="menuButton" destination="BkQ-Ae-N0S" id="Fe7-pN-YzL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oUN-JR-prk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1324" y="636.4317841079461"/>
+        </scene>
+        <!--UserVC-->
+        <scene sceneID="Swf-3g-gHN">
+            <objects>
+                <viewController id="cTH-3H-2aT" customClass="UserVC" customModule="Pills" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qa8-rF-LcJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="NDZ-7R-P2h"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qFk-U8-UOU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="973" y="-482"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="smackBurger" width="40" height="40"/>
+    </resources>
+</document>
