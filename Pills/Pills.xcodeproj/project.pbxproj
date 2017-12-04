@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		044339B81FD5B7E20029AE4A /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044339B71FD5B7E20029AE4A /* LoginVC.swift */; };
+		044339BB1FD5B8400029AE4A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044339BA1FD5B8400029AE4A /* Constants.swift */; };
 		0444CC171FD59B1500246C12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0444CC161FD59B1500246C12 /* AppDelegate.swift */; };
 		0444CC1C1FD59B1500246C12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0444CC1A1FD59B1500246C12 /* Main.storyboard */; };
 		0444CC1E1FD59B1500246C12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0444CC1D1FD59B1500246C12 /* Assets.xcassets */; };
@@ -16,10 +18,11 @@
 		0444CC3B1FD5A23200246C12 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0444CC3A1FD5A23200246C12 /* SWRevealViewController.m */; };
 		0444CC3E1FD5A57700246C12 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0444CC3D1FD5A57700246C12 /* GradientView.swift */; };
 		0444CC401FD5B01A00246C12 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0444CC3F1FD5B01A00246C12 /* GoogleService-Info.plist */; };
-		FC6C1EADAD3245BDC1B251EA /* Pods_Pills.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 054DC5EB7737F00D98C3D531 /* Pods_Pills.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		044339B71FD5B7E20029AE4A /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		044339BA1FD5B8400029AE4A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		0444CC131FD59B1500246C12 /* Pills.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pills.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0444CC161FD59B1500246C12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0444CC1B1FD59B1500246C12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -33,7 +36,6 @@
 		0444CC3C1FD5A29B00246C12 /* Pills-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pills-Bridging-Header.h"; sourceTree = "<group>"; };
 		0444CC3D1FD5A57700246C12 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		0444CC3F1FD5B01A00246C12 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		054DC5EB7737F00D98C3D531 /* Pods_Pills.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pills.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EFADF9ED1E59738E388DEFA /* Pods-Pills.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pills.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pills/Pods-Pills.debug.xcconfig"; sourceTree = "<group>"; };
 		487C4D94EB75C6DB51471F61 /* Pods-Pills.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pills.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pills/Pods-Pills.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -43,16 +45,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC6C1EADAD3245BDC1B251EA /* Pods_Pills.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		044339B91FD5B82E0029AE4A /* Utillities */ = {
+			isa = PBXGroup;
+			children = (
+				044339BA1FD5B8400029AE4A /* Constants.swift */,
+			);
+			path = Utillities;
+			sourceTree = "<group>";
+		};
 		0444CC0A1FD59B1500246C12 = {
 			isa = PBXGroup;
 			children = (
+				044339B91FD5B82E0029AE4A /* Utillities */,
 				0444CC3F1FD5B01A00246C12 /* GoogleService-Info.plist */,
 				0444CC301FD59D6000246C12 /* Model */,
 				0444CC2F1FD59D5C00246C12 /* View */,
@@ -100,6 +110,7 @@
 			children = (
 				0444CC311FD59D8100246C12 /* PillsVC.swift */,
 				0444CC331FD59D9500246C12 /* UserVC.swift */,
+				044339B71FD5B7E20029AE4A /* LoginVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -122,7 +133,6 @@
 		6BFB38DEA5B9D4E355AC319E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				054DC5EB7737F00D98C3D531 /* Pods_Pills.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -273,7 +283,9 @@
 			files = (
 				0444CC321FD59D8100246C12 /* PillsVC.swift in Sources */,
 				0444CC171FD59B1500246C12 /* AppDelegate.swift in Sources */,
+				044339B81FD5B7E20029AE4A /* LoginVC.swift in Sources */,
 				0444CC3E1FD5A57700246C12 /* GradientView.swift in Sources */,
+				044339BB1FD5B8400029AE4A /* Constants.swift in Sources */,
 				0444CC341FD59D9500246C12 /* UserVC.swift in Sources */,
 				0444CC3B1FD5A23200246C12 /* SWRevealViewController.m in Sources */,
 			);

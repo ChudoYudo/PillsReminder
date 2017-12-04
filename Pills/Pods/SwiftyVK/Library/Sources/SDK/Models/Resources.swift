@@ -31,7 +31,7 @@ internal struct Resources {
         return bundle
     }
     else if
-        let path = Bundle(for:object_getClass(ResourceTestClass())).path(forResource: name, ofType: ext),
+        let path = Bundle(for:object_getClass(ResourceTestClass())!).path(forResource: name, ofType: ext),
         let bundle = Bundle(path:path) {
             return bundle
     }

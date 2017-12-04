@@ -179,7 +179,7 @@ internal class Token: NSObject, NSCoding {
         var keychainResult: AnyObject?
 
         guard
-            SecItemCopyMatching(keychainQuery, &keychainResult) == .allZeros,
+            SecItemCopyMatching(keychainQuery, &keychainResult) == 0,
             let data = keychainResult as? Data,
             let token = NSKeyedUnarchiver.unarchiveObject(with: data) as? Token
             else {return nil}
@@ -202,7 +202,7 @@ internal class Token: NSObject, NSCoding {
 
         let keychainCode = SecItemAdd(keychainQuery, nil)
         
-        guard keychainCode == .allZeros else {
+        guard keychainCode == 0 else {
             VK.Log.put("Token", "not saved to keychain with error code \(keychainCode)")
             return
         }
