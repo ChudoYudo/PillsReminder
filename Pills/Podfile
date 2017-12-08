@@ -3,6 +3,7 @@ use_frameworks!
 target 'Pills' do
 	pod ‘SwiftyVK’	
 	pod 'Firebase/Core'
+	pod ‘Firebase/Auth’
   # Pods for Pills
 
 end

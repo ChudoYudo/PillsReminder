@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,7 +17,41 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        FirebaseApp.configure()
+        //Регистрируем уведомления
+        if #available(iOS 10, *) {
+            application.registerUserNotificationSettings(UIUserNotificationSettings(types: [.sound, .alert, .badge], categories: nil))
+        }
+        
+        if UserDefaults.standard.bool(forKey: "loggedIn") == true {
+            //Входим в аккаунт
+            //let email = UserDefaults.standard.string(forKey: "userEmail")!
+           // let password = UserDefaults.standard.string(forKey: "userPassword")!
+            
+            //Входим в аккаунт пользователя
+           // Auth.auth().signIn(withEmail: email, password: password) { (user, error) in
+              //  if error != nil {
+              //      print("Problems with signing in!");
+              //  } else {
+                    
+               // }
+          //  }
+            let appDelegate = UIApplication.shared.delegate as! AppDelegate
+            appDelegate.window = UIWindow(frame: UIScreen.main.bounds)
+            let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let toDoVC = mainStoryboard.instantiateViewController(withIdentifier: "SWVC")
+            appDelegate.window?.rootViewController = toDoVC
+            appDelegate.window?.makeKeyAndVisible()
+        }
+        else if UserDefaults.standard.bool(forKey: "loggedIn") == false {
+            let appDelegate = UIApplication.shared.delegate as! AppDelegate
+            appDelegate.window = UIWindow(frame: UIScreen.main.bounds)
+            let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let loginVC = mainStoryboard.instantiateViewController(withIdentifier: "LoginVC")
+            appDelegate.window?.rootViewController = loginVC
+            appDelegate.window?.makeKeyAndVisible()
+        }
+        
         return true
     }
 
