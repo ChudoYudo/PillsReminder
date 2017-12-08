@@ -48,6 +48,7 @@ public class RegistrationAndLoginViaEmail {
             if error == nil {
                 //Говорим, что мы только создали аккаунт
                 SaveUserSignInfo.userHaveJustCreatedNewAccount()
+                SaveUserSignInfo.setUserName(firstName: firstName, secondName: secondName)
                 //Заходим в аккаунт
                 RegistrationAndLoginViaEmail.login(email: email, password: password, viewController: viewController, identifier: identifier)
                 //Если при создании аккаунта есть проблемы

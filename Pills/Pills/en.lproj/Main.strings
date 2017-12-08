@@ -1,0 +1,60 @@
+
+/* Class = "UILabel"; text = "Don't have an account? Sign up here"; ObjectID = "0vD-Tb-dRR"; */
+"0vD-Tb-dRR.text" = "Don't have an account? Sign up here";
+
+/* Class = "UILabel"; text = "Pills Reminder"; ObjectID = "4og-h5-Gym"; */
+"4og-h5-Gym.text" = "Pills Reminder";
+
+/* Class = "UILabel"; text = "First name:"; ObjectID = "7uz-gp-ue7"; */
+"7uz-gp-ue7.text" = "First name:";
+
+/* Class = "UILabel"; text = "Second name:"; ObjectID = "AkH-QP-AoU"; */
+"AkH-QP-AoU.text" = "Second name:";
+
+/* Class = "UILabel"; text = "Password:"; ObjectID = "FDX-lc-5xe"; */
+"FDX-lc-5xe.text" = "Password:";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "L6U-SK-Xe8"; */
+"L6U-SK-Xe8.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Login"; ObjectID = "M1M-dZ-jnw"; */
+"M1M-dZ-jnw.normalTitle" = "Login";
+
+/* Class = "UILabel"; text = "Pills Reminder"; ObjectID = "SSc-Kf-m6u"; */
+"SSc-Kf-m6u.text" = "Pills Reminder";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "TfA-kL-zBa"; */
+"TfA-kL-zBa.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Remind every:"; ObjectID = "UbA-iE-XzR"; */
+"UbA-iE-XzR.text" = "Remind every:";
+
+/* Class = "UITextField"; text = "Product"; ObjectID = "Zzs-uH-Azb"; */
+"Zzs-uH-Azb.text" = "Product";
+
+/* Class = "UILabel"; text = "Pills Reminder"; ObjectID = "aBJ-Eq-2Aj"; */
+"aBJ-Eq-2Aj.text" = "Pills Reminder";
+
+/* Class = "UILabel"; text = "Add new pill:"; ObjectID = "aNg-tD-dpX"; */
+"aNg-tD-dpX.text" = "Add new pill:";
+
+/* Class = "UILabel"; text = "Pills Reminder"; ObjectID = "ct3-v9-08h"; */
+"ct3-v9-08h.text" = "Pills Reminder";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "e8Z-V9-uxi"; */
+"e8Z-V9-uxi.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Email:"; ObjectID = "gIa-ls-yHE"; */
+"gIa-ls-yHE.text" = "Email:";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "gUk-5o-5j1"; */
+"gUk-5o-5j1.text" = "Label";
+
+/* Class = "UILabel"; text = "Password:"; ObjectID = "iDt-V9-yvQ"; */
+"iDt-V9-yvQ.text" = "Password:";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "uvF-h5-Q47"; */
+"uvF-h5-Q47.text" = "Label";
+
+/* Class = "UILabel"; text = "Email:"; ObjectID = "xB7-ff-eB1"; */
+"xB7-ff-eB1.text" = "Email:";

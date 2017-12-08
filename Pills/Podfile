@@ -4,6 +4,9 @@ target 'Pills' do
 	pod ‘SwiftyVK’	
 	pod 'Firebase/Core'
 	pod ‘Firebase/Auth’
+    pod ‘Timepiece’
+    pod ‘SwiftyJSON‘
+    
   # Pods for Pills
 
 end

@@ -19,11 +19,39 @@
 		0444CC3B1FD5A23200246C12 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0444CC3A1FD5A23200246C12 /* SWRevealViewController.m */; };
 		0444CC3E1FD5A57700246C12 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0444CC3D1FD5A57700246C12 /* GradientView.swift */; };
 		0444CC401FD5B01A00246C12 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0444CC3F1FD5B01A00246C12 /* GoogleService-Info.plist */; };
-		044705761FDA02EF00E806BF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044705751FDA02EF00E806BF /* User.swift */; };
+		044705761FDA02EF00E806BF /* SaveUserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044705751FDA02EF00E806BF /* SaveUserInfo.swift */; };
 		044705781FDA03AC00E806BF /* RegistrationAndLoginViaEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044705771FDA03AC00E806BF /* RegistrationAndLoginViaEmail.swift */; };
+		0447057D1FDA197E00E806BF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0447057C1FDA197E00E806BF /* User.swift */; };
+		0447057F1FDA198800E806BF /* Pill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0447057E1FDA198800E806BF /* Pill.swift */; };
 		044EB5771FD6F31200133952 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044EB5761FD6F31200133952 /* Reachability.swift */; };
+		0465C5561FDA46B7001CCB03 /* SetPillVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0465C5551FDA46B7001CCB03 /* SetPillVC.swift */; };
+		04CA80651FDA230F00028BCC /* SwiftyVK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04CA80641FDA230F00028BCC /* SwiftyVK.framework */; };
+		04CA80671FDA233D00028BCC /* Timepiece.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04CA80661FDA233D00028BCC /* Timepiece.framework */; };
+		04CA80691FDA236400028BCC /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04CA80681FDA236400028BCC /* SwiftyJSON.framework */; };
+		04CA806A1FDA239400028BCC /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04CA80681FDA236400028BCC /* SwiftyJSON.framework */; };
+		04CA806B1FDA239400028BCC /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 04CA80681FDA236400028BCC /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		04CA806C1FDA239400028BCC /* Timepiece.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04CA80661FDA233D00028BCC /* Timepiece.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		04CA806D1FDA239400028BCC /* Timepiece.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 04CA80661FDA233D00028BCC /* Timepiece.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		04CA806E1FDA239400028BCC /* SwiftyVK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04CA80641FDA230F00028BCC /* SwiftyVK.framework */; };
+		04CA806F1FDA239400028BCC /* SwiftyVK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 04CA80641FDA230F00028BCC /* SwiftyVK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6FC52CF451F9AD5B576D246D /* Pods_Pills.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1241FAED2AE634CA4D029C32 /* Pods_Pills.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		04C04DA11FDA1FB900A35140 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				04CA806F1FDA239400028BCC /* SwiftyVK.framework in Embed Frameworks */,
+				04CA806D1FDA239400028BCC /* Timepiece.framework in Embed Frameworks */,
+				04CA806B1FDA239400028BCC /* SwiftyJSON.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		044339B71FD5B7E20029AE4A /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -42,9 +70,19 @@
 		0444CC3C1FD5A29B00246C12 /* Pills-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pills-Bridging-Header.h"; sourceTree = "<group>"; };
 		0444CC3D1FD5A57700246C12 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		0444CC3F1FD5B01A00246C12 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		044705751FDA02EF00E806BF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		044705751FDA02EF00E806BF /* SaveUserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveUserInfo.swift; sourceTree = "<group>"; };
 		044705771FDA03AC00E806BF /* RegistrationAndLoginViaEmail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationAndLoginViaEmail.swift; sourceTree = "<group>"; };
+		0447057C1FDA197E00E806BF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		0447057E1FDA198800E806BF /* Pill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pill.swift; sourceTree = "<group>"; };
 		044EB5761FD6F31200133952 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		045ACCBD1FDA214B0006E99D /* SwiftyVK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyVK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0465C5551FDA46B7001CCB03 /* SetPillVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetPillVC.swift; sourceTree = "<group>"; };
+		04CA805F1FDA21C900028BCC /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		04CA80601FDA21C900028BCC /* Timepiece.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Timepiece.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		04CA80641FDA230F00028BCC /* SwiftyVK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SwiftyVK.framework; sourceTree = SOURCE_ROOT; };
+		04CA80661FDA233D00028BCC /* Timepiece.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Timepiece.framework; sourceTree = SOURCE_ROOT; };
+		04CA80681FDA236400028BCC /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = SOURCE_ROOT; };
+		04CA80731FDA304C00028BCC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = ../../../../../Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = SOURCE_ROOT; };
 		0EFADF9ED1E59738E388DEFA /* Pods-Pills.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pills.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pills/Pods-Pills.debug.xcconfig"; sourceTree = "<group>"; };
 		1241FAED2AE634CA4D029C32 /* Pods_Pills.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pills.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		487C4D94EB75C6DB51471F61 /* Pods-Pills.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pills.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pills/Pods-Pills.release.xcconfig"; sourceTree = "<group>"; };
@@ -55,7 +93,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04CA80691FDA236400028BCC /* SwiftyJSON.framework in Frameworks */,
+				04CA80651FDA230F00028BCC /* SwiftyVK.framework in Frameworks */,
+				04CA80671FDA233D00028BCC /* Timepiece.framework in Frameworks */,
 				6FC52CF451F9AD5B576D246D /* Pods_Pills.framework in Frameworks */,
+				04CA806E1FDA239400028BCC /* SwiftyVK.framework in Frameworks */,
+				04CA806C1FDA239400028BCC /* Timepiece.framework in Frameworks */,
+				04CA806A1FDA239400028BCC /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +117,7 @@
 		0444CC0A1FD59B1500246C12 = {
 			isa = PBXGroup;
 			children = (
+				0447057B1FDA195200E806BF /* DatabaseModels */,
 				044339B91FD5B82E0029AE4A /* Utillities */,
 				0444CC3F1FD5B01A00246C12 /* GoogleService-Info.plist */,
 				0444CC301FD59D6000246C12 /* Model */,
@@ -123,6 +168,7 @@
 				0444CC331FD59D9500246C12 /* UserVC.swift */,
 				044339B71FD5B7E20029AE4A /* LoginVC.swift */,
 				044339C01FD5BED40029AE4A /* CreateAccountVC.swift */,
+				0465C5551FDA46B7001CCB03 /* SetPillVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -139,15 +185,31 @@
 			isa = PBXGroup;
 			children = (
 				044EB5761FD6F31200133952 /* Reachability.swift */,
-				044705751FDA02EF00E806BF /* User.swift */,
+				044705751FDA02EF00E806BF /* SaveUserInfo.swift */,
 				044705771FDA03AC00E806BF /* RegistrationAndLoginViaEmail.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
+		0447057B1FDA195200E806BF /* DatabaseModels */ = {
+			isa = PBXGroup;
+			children = (
+				0447057C1FDA197E00E806BF /* User.swift */,
+				0447057E1FDA198800E806BF /* Pill.swift */,
+			);
+			path = DatabaseModels;
+			sourceTree = "<group>";
+		};
 		6BFB38DEA5B9D4E355AC319E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				04CA80731FDA304C00028BCC /* XCTest.framework */,
+				04CA80681FDA236400028BCC /* SwiftyJSON.framework */,
+				04CA80661FDA233D00028BCC /* Timepiece.framework */,
+				04CA80641FDA230F00028BCC /* SwiftyVK.framework */,
+				04CA805F1FDA21C900028BCC /* SwiftyJSON.framework */,
+				04CA80601FDA21C900028BCC /* Timepiece.framework */,
+				045ACCBD1FDA214B0006E99D /* SwiftyVK.framework */,
 				1241FAED2AE634CA4D029C32 /* Pods_Pills.framework */,
 			);
 			name = Frameworks;
@@ -175,6 +237,7 @@
 				0444CC111FD59B1500246C12 /* Resources */,
 				8EBDE10D0E479D2A194EED8D /* [CP] Embed Pods Frameworks */,
 				E4A7F0509B5AA94B8CCC2D72 /* [CP] Copy Pods Resources */,
+				04C04DA11FDA1FB900A35140 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -244,14 +307,18 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Pills/Pods-Pills-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyVK/SwiftyVK.framework",
+				"${BUILT_PRODUCTS_DIR}/Timepiece/Timepiece.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyVK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Timepiece.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,6 +366,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0465C5561FDA46B7001CCB03 /* SetPillVC.swift in Sources */,
 				0444CC321FD59D8100246C12 /* PillsVC.swift in Sources */,
 				0444CC171FD59B1500246C12 /* AppDelegate.swift in Sources */,
 				044339C11FD5BED40029AE4A /* CreateAccountVC.swift in Sources */,
@@ -306,9 +374,11 @@
 				0444CC3E1FD5A57700246C12 /* GradientView.swift in Sources */,
 				044EB5771FD6F31200133952 /* Reachability.swift in Sources */,
 				044705781FDA03AC00E806BF /* RegistrationAndLoginViaEmail.swift in Sources */,
+				0447057F1FDA198800E806BF /* Pill.swift in Sources */,
 				044339BB1FD5B8400029AE4A /* Constants.swift in Sources */,
+				0447057D1FDA197E00E806BF /* User.swift in Sources */,
 				0444CC341FD59D9500246C12 /* UserVC.swift in Sources */,
-				044705761FDA02EF00E806BF /* User.swift in Sources */,
+				044705761FDA02EF00E806BF /* SaveUserInfo.swift in Sources */,
 				0444CC3B1FD5A23200246C12 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -450,6 +520,10 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CSMBE4NXW6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Pills/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = NG.com.Pills;
@@ -469,6 +543,10 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CSMBE4NXW6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Pills/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = NG.com.Pills;

@@ -25,17 +25,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         if UserDefaults.standard.bool(forKey: "loggedIn") == true {
             //Входим в аккаунт
-            //let email = UserDefaults.standard.string(forKey: "userEmail")!
-           // let password = UserDefaults.standard.string(forKey: "userPassword")!
+            let email = UserDefaults.standard.string(forKey: "userEmail")!
+            let password = UserDefaults.standard.string(forKey: "userPassword")!
             
             //Входим в аккаунт пользователя
-           // Auth.auth().signIn(withEmail: email, password: password) { (user, error) in
-              //  if error != nil {
-              //      print("Problems with signing in!");
-              //  } else {
+            Auth.auth().signIn(withEmail: email, password: password) { (user, error) in
+                if error != nil {
+                   print("Problems with signing in!");
+               } else {
                     
-               // }
-          //  }
+                }
+            }
             let appDelegate = UIApplication.shared.delegate as! AppDelegate
             appDelegate.window = UIWindow(frame: UIScreen.main.bounds)
             let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
@@ -43,7 +43,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             appDelegate.window?.rootViewController = toDoVC
             appDelegate.window?.makeKeyAndVisible()
         }
-        else if UserDefaults.standard.bool(forKey: "loggedIn") == false {
+        else if UserDefaults.standard.bool(forKey: "loggedIn ") == false {
             let appDelegate = UIApplication.shared.delegate as! AppDelegate
             appDelegate.window = UIWindow(frame: UIScreen.main.bounds)
             let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)

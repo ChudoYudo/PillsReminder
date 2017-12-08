@@ -1,5 +1,5 @@
 //
-//  User.swift
+//  SaveUserInfo.swift
 //  Pills
 //
 //  Created by NG on 12/8/17.
@@ -29,6 +29,8 @@ public class SaveUserSignInfo {
     //Сохраняет в UserDefaults информацию о том, что пользователь уже вышел из аккаунта
     class func sayImLoggedOut() {
         UserDefaults.standard.set(false, forKey: "loggedIn")
+        UserDefaults.standard.setValue("", forKey: "firstName")
+        UserDefaults.standard.setValue("", forKey: "secondName")
         UserDefaults.standard.synchronize()
     }
     
@@ -51,5 +53,8 @@ public class SaveUserSignInfo {
     class func setUserName(firstName: String, secondName: String){
         UserDefaults.standard.setValue("\(firstName)", forKey: "firstName")
         UserDefaults.standard.setValue("\(secondName)", forKey: "secondName")
+        userFirstName = firstName
+        userSecondName = secondName
+        UserDefaults.standard.synchronize()
     }
 }
