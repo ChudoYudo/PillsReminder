@@ -10,7 +10,7 @@ import UIKit
 import Firebase
 
 class PillsVC: UIViewController {
-    //Outlets
+    
     
     @IBOutlet weak var menuButton: UIButton!
     

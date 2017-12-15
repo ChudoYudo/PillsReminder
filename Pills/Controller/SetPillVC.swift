@@ -7,17 +7,28 @@
 //
 
 import UIKit
+import Timepiece
 
-class SetPillVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
+class SetPillVC: UIViewController {
 
-    var duration: [String] = []
-    @IBOutlet weak var remindPicker: UIPickerView!
+    @IBOutlet weak var productTextField: UITextField!
+    @IBOutlet weak var cycleTextField: UITextField!
+    @IBOutlet weak var amountTextField: UITextField!
+    @IBOutlet weak var slider: UISlider!
+    @IBOutlet weak var sliderLabel: UILabel!
+    var pill: Pill = Pill()
+    
+    @IBAction func startButtonPressed(_ sender: Any) {
+        pill.setPill(pillName: productTextField.text!, pillNumber: Int(amountTextField.text!)!, pillCycle: Int(cycleTextField.text!)!, dateOfStart: Date(), reminder: Int(slider.value))
+        User.addPill(pill: pill)
+        performSegue(withIdentifier: "addedPill", sender: nil)
+    }
+    @IBAction func sliderValueChanged(_ sender: Any) {
+        sliderLabel.text = "\(String(Int(slider.value))) hours"
+    }
     override func viewDidLoad() {
-        duration = ["hour", "2 hours", "3 hours", "6 hours", "8 hours", "12 hours", "24 hours"]
-        remindPicker.delegate = self
-        remindPicker.dataSource = self
-        remindPicker.tag = 1
         super.viewDidLoad()
+        self.hideKeyboardWhenTappedAround()
         // Do any additional setup after loading the view.
     }
 
@@ -26,21 +37,6 @@ class SetPillVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate 
         // Dispose of any resources that can be recreated.
     }
     
-    func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        return 1
-    }
     
-    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return duration.count
-    }
-    
-    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return "\(duration[row])"
-    }
-    
-    
-    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        var itemSelected = duration[row]
-    }
 }
 

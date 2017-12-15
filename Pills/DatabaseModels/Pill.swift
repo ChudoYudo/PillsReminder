@@ -7,10 +7,20 @@
 //
 
 import Foundation
-import Timepiece
+import SwiftyJSON
 
 class Pill {
-    static var pillName: String = ""
-    static var pillNumber: Int = 0
-    static var pillCycle: Int = 0
+    private var pillName: String = ""
+    private var pillNumber: Int = 0
+    private var pillCycle: Int = 0
+    private var dateOfStart: Date = Date()
+    private var reminder: Int = 0
+    
+    public func setPill(pillName: String, pillNumber: Int, pillCycle: Int, dateOfStart: Date, reminder: Int){
+        self.pillName = pillName
+        self.pillNumber = pillNumber
+        self.pillCycle = pillCycle
+        self.dateOfStart = dateOfStart
+        self.reminder = reminder
+    }
 }

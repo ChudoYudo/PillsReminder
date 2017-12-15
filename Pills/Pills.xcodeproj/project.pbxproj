@@ -30,10 +30,9 @@
 		04CA80691FDA236400028BCC /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04CA80681FDA236400028BCC /* SwiftyJSON.framework */; };
 		04CA806A1FDA239400028BCC /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04CA80681FDA236400028BCC /* SwiftyJSON.framework */; };
 		04CA806B1FDA239400028BCC /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 04CA80681FDA236400028BCC /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		04CA806C1FDA239400028BCC /* Timepiece.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04CA80661FDA233D00028BCC /* Timepiece.framework */; settings = {ATTRIBUTES = (Required, ); }; };
-		04CA806D1FDA239400028BCC /* Timepiece.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 04CA80661FDA233D00028BCC /* Timepiece.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		04CA806E1FDA239400028BCC /* SwiftyVK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04CA80641FDA230F00028BCC /* SwiftyVK.framework */; };
 		04CA806F1FDA239400028BCC /* SwiftyVK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 04CA80641FDA230F00028BCC /* SwiftyVK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		04E5DF841FDA8F6C008006CA /* DateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E5DF831FDA8F6C008006CA /* DateModel.swift */; };
 		6FC52CF451F9AD5B576D246D /* Pods_Pills.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1241FAED2AE634CA4D029C32 /* Pods_Pills.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,7 +44,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				04CA806F1FDA239400028BCC /* SwiftyVK.framework in Embed Frameworks */,
-				04CA806D1FDA239400028BCC /* Timepiece.framework in Embed Frameworks */,
 				04CA806B1FDA239400028BCC /* SwiftyJSON.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -83,6 +81,7 @@
 		04CA80661FDA233D00028BCC /* Timepiece.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Timepiece.framework; sourceTree = SOURCE_ROOT; };
 		04CA80681FDA236400028BCC /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = SOURCE_ROOT; };
 		04CA80731FDA304C00028BCC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = ../../../../../Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = SOURCE_ROOT; };
+		04E5DF831FDA8F6C008006CA /* DateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateModel.swift; sourceTree = "<group>"; };
 		0EFADF9ED1E59738E388DEFA /* Pods-Pills.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pills.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pills/Pods-Pills.debug.xcconfig"; sourceTree = "<group>"; };
 		1241FAED2AE634CA4D029C32 /* Pods_Pills.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pills.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		487C4D94EB75C6DB51471F61 /* Pods-Pills.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pills.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pills/Pods-Pills.release.xcconfig"; sourceTree = "<group>"; };
@@ -98,7 +97,6 @@
 				04CA80671FDA233D00028BCC /* Timepiece.framework in Frameworks */,
 				6FC52CF451F9AD5B576D246D /* Pods_Pills.framework in Frameworks */,
 				04CA806E1FDA239400028BCC /* SwiftyVK.framework in Frameworks */,
-				04CA806C1FDA239400028BCC /* Timepiece.framework in Frameworks */,
 				04CA806A1FDA239400028BCC /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -187,6 +185,7 @@
 				044EB5761FD6F31200133952 /* Reachability.swift */,
 				044705751FDA02EF00E806BF /* SaveUserInfo.swift */,
 				044705771FDA03AC00E806BF /* RegistrationAndLoginViaEmail.swift */,
+				04E5DF831FDA8F6C008006CA /* DateModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -371,6 +370,7 @@
 				0444CC171FD59B1500246C12 /* AppDelegate.swift in Sources */,
 				044339C11FD5BED40029AE4A /* CreateAccountVC.swift in Sources */,
 				044339B81FD5B7E20029AE4A /* LoginVC.swift in Sources */,
+				04E5DF841FDA8F6C008006CA /* DateModel.swift in Sources */,
 				0444CC3E1FD5A57700246C12 /* GradientView.swift in Sources */,
 				044EB5771FD6F31200133952 /* Reachability.swift in Sources */,
 				044705781FDA03AC00E806BF /* RegistrationAndLoginViaEmail.swift in Sources */,
@@ -531,7 +531,7 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "Supporting files/Pills-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -553,7 +553,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Supporting files/Pills-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
